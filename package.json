@@ -1,0 +1,48 @@
+{
+  "name": "ide-model-utils",
+  "version": "0.1.0",
+  "description": "mst model for ide",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.umd.js",
+  "browser": "dist/index.umd.js",
+  "idebug": "src/index.tsx",
+  "typings": "dist/index.d.ts",
+  "sideEffects": false,
+  "homepage": "https://one-gourd.github.io/ide-model-utils",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/one-gourd/ide-model-utils.git"
+  },
+  "scripts": {
+    "dev": "ide-cli dev",
+    "install:peers": "ide-cli install --use tnpm",
+    "install:all": "tnpm install && npm run install:peers",
+    "test": "./node_modules/.bin/jest",
+    "release": "npx standard-version",
+    "build": "ide-cli build",
+    "pregh-pages": "node ./node-helper/download-code-worker.js",
+    "gh-pages": "webpack --config webpack.gh-pages.js && npx gh-pages -d public"
+  },
+  "keywords": [],
+  "author": "boycgit",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chance": "^1.0.1",
+    "@types/jest": "^23.3.9",
+    "@types/node": "^10.12.8",
+    "chance": "^1.0.16",
+    "ide-component-cli": "0.2.x",
+    "jest": "^24.8.0",
+    "ts-import-plugin": "^1.5.5",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^7.0.1",
+    "typescript": "3.3.4000"
+  },
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "ide-lib-utils": "^0.1.8",
+    "mobx": "4.x",
+    "mobx-state-tree": "3.14.x"
+  }
+}
