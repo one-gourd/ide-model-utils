@@ -1,6 +1,6 @@
 {
   "name": "ide-model-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "mst model for ide",
   "main": "dist/index.umd.js",
   "module": "dist/index.umd.js",
@@ -38,11 +38,22 @@
     "ts-node": "^7.0.1",
     "typescript": "3.3.4000"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "peerDependencies": {
     "ide-lib-utils": "^0.1.8",
     "mobx": "4.x",
     "mobx-state-tree": "3.14.x"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
